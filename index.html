@@ -5,48 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" href="favicon.ico">
+    <title>ReproESports</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <div class="nav">
-        <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Support</li>
-            <li>Contact</li>
-        </ul>
-    </div>
-    <div class="wrapper">
-        <div class="img-area">
-            <div class="image-text centered-container">
-                Learn Coding on Zenva.com
+    <div class="root">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fas fa-times" id="closeMe"></i>
+                <ul>
+                    <a class="active" href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>ABOUT</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>CONTACT</li>
+                    </a>
+                </ul>
+                <button type="button" class="btn">SIGN UP</button>
+            </div>
+
+            <i class="fas fa-bars" id="showMe"></i>
+        </div>
+        <div class="banner-title">
+            <h1>Life is <span>to short<br> to play bad games.</span> Let's play it</h1>
+            <button type="button" class="btn">EXPLORE</button>
+        </div>
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <i class="fas fa-list"></i>
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <a href="https://www.youtube.com/channel/UC7CBFljGVy_FdLUJAVSahsQ"> <i class="fab fa-youtube"> </i></a>
             </div>
         </div>
-        <div class="intro-text centered-container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quos
-            neque labore
-            consequuntur quasi a.</div>
-        <div class="services centered-container">
-            <div class="single-service">
-                <img src="images/zenva-banner.png" alt="" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, itaque!</p>
+        <div class="notifications">
+            <div class="contents">
+                <small>Subscribe to my Apex Legends Youtube Channel for more content</small>
+                <p><a href="#">PREV</a> <a href="#">NEXT</a> </p>
             </div>
-            <div class="single-service">
-                <img src="images/zenva-banner.png" alt="" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, itaque!</p>
-            </div>
-            <div class="single-service">
-                <img src="images/zenva-banner.png" alt="" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, itaque!</p>
-            </div>
-            <div class="single-service">
-                <img src="images/zenva-banner.png" alt="" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, itaque!</p>
+            <div class="notifications-img">
+                <img src="images/win.png" alt="WIN">
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
+<!-- Victor.Aremu -->

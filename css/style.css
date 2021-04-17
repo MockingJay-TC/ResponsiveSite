@@ -1,82 +1,149 @@
-body {
-  background-color: white;
-  color: black;
-  font-size: 16px;
-  font-family: Arial, Arial, Helvetica, sans-serif;
-  padding: 0px;
-  margin: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Fira Code;
 }
-
-.nav {
-  background-color: cadetblue;
-  color: white;
-}
-
-.nav ul {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-  font-size: 0px;
-}
-.nav ul li {
-  padding: 16px;
-  text-align: center;
-  font-size: 1.2rem;
-  border-bottom: 1px solid black;
-  transition: background-color 0.2s ease-in-out;
-}
-.nav ul li:hover {
-  background-color: black;
-  transition: 0.4s;
-}
-.image-area {
-  background-image: url("images/background-image");
-  background-color: black;
-  background-position: center center;
+.root {
+  height: 100vh;
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("../images/pad.jpg");
+  background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  overflow-x: hidden;
+  position: relative;
+}
+.nav-bar {
+  display: flex;
+  padding: 40px 120px;
+}
+.nav-logo img {
+  width: 60px;
+}
+.nav-links {
+  flex: 1;
+}
+.nav-links ul {
+  margin-left: 50px;
+  display: inline;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 25px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
-.centered-container {
-  max-width: 1020px;
-  margin: 0px auto;
+.nav-links li:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: red;
+  display: block;
+  margin: auto;
+  transition: 0.5s ease-out;
 }
-.image-text {
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+.btn {
+  padding: 10px 20px;
+  border: 0;
+  background: yellow;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+.nav-links .btn {
+  float: right;
+}
+.banner-title {
+  margin: 80px 130px;
+  color: #fff;
+}
+.banner-title h1 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+.banner-title h1 span {
+  color: yellow;
+}
+.nav-bar .fas {
+  display: none;
+}
+.vertical-bar {
+  height: 100%;
+  background: #000;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.search-icon {
+  height: 60%;
+  width: 80px;
+}
+.search-icon .fas {
+  margin: 45px 23px;
+  display: block;
+  color: #fff;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+.social-icons {
+  height: 35%;
+  width: 80px;
+  background: yellow;
   text-align: center;
-  background-color: black;
-  color: white;
-  font-size: 2.5rem;
-  padding: 0px 16px;
+  padding-top: 27%;
+  bottom: 0;
+  position: absolute;
 }
-
-.intro-text {
-
-  color: gray;
-  font-size: 1.5rem;
-  text-align: center;
-  padding-top: 50px;
+.social-icons .fab {
+  margin: 15px 23px;
+  display: block;
+  padding: 8px;
+  border: 1px solid#000;
+  border-radius: 50%;
+  cursor: pointer;
 }
-.single-service {
-  text-align: center;
-  margin-bottom: 32px;
+.social-icons a {
+  text-decoration: none;
+  color: #333;
 }
-.single-service p {
-  padding: 0px 16px;
+.notifications {
+  display: flex;
+  width: 400px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: yellow;
+  align-items: center;
 }
-
-@media screen and (min-width: 700px) {
-  .nav ul {
-    text-align: right;
-  }
-  .nav ul li {
-    display: inline-block;
-    border-bottom: none;
-    border-left: 1px solid black;
-    text-align: left;
-  }
-  .single-service {
-    width: 50%;
-    float: left;
-  }
+.contents {
+  flex-basis: 50%;
+  padding: 10px;
 }
+.notifications-img {
+  flex-basis: 50%;
+}
+.notifications-img img {
+  width: 100%;
+}
+.contents a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+  margin: 0 10px;
+}
+.contents p {
+  text-align: right;
+  margin-top: 10px;
+}
+/* Victor.Aremu */
