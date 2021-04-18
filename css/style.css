@@ -97,13 +97,13 @@
   cursor: pointer;
 }
 .social-icons {
-  height: 35%;
+  height: auto;
   width: 80px;
   background: yellow;
   text-align: center;
   padding-top: 27%;
   bottom: 0;
-  position: absolute;
+  position:absolute;
 }
 .social-icons .fab {
   margin: 15px 23px;
