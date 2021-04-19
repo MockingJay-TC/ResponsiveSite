@@ -140,7 +140,7 @@ hr {
 @media only screen and (min-width: 350px) and (max-width: 500px)  {
   form {
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
