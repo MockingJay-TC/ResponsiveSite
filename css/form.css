@@ -1,5 +1,5 @@
 .banner-title2 {
-  margin: 0 130px;
+  margin: 0 10px;
   color: #fff;
   box-shadow: 0px 0px 70px 0.9px rgba(85, 85, 85, 0.75);
   border-radius: 15px;
@@ -113,6 +113,31 @@ hr {
 }
 
 @media only screen and (min-width: 500px) and (max-width: 1100px)  {
+  form {
+    
+    margin: auto;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  
+  }
+  input{
+    max-width: 200px;
+    font-size: 1rem;
+  }
+  textArea{
+    width: 200px;
+    height: 80px;
+    font-size: 1rem;
+  }
+  .btnForm{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 500px)  {
   form {
     margin: auto;
     border: 1px solid red;
