@@ -26,6 +26,7 @@ let isFormValid = false;
 
 const validateInputs = () => {
   console.log("we are here");
+
   if (!shouldValidate) return;
 
   isFormValid = true;
@@ -47,6 +48,13 @@ form.addEventListener("submit", (e) => {
   validateInputs();
   if (isFormValid) {
     // TODO: DO AJAX REQUEST
+    alert(` Your Name is ${nameInput.value}
+            Your email is ${emailInput.value}
+            Your phone is ${phoneInput.value}
+            Your message is ${messageInput.value}
+          ` );
+
+    console.log("clicked");
   }
 });
 
